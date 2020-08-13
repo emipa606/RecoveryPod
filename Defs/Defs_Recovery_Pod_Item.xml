@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>MSRecoveryPodItem</defName>
+    <label>Portable Recovery Pod Kit</label>
+    <description>A portable recovery pod kit that can be deployed in the field with minimal construction. Additionally will require fueling.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/MSRecoveryPodItem/MSRecoveryPodItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>276</MarketValue>
+      <Mass>7.0</Mass>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <thingCategories Inherit="false">
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeMSRecoveryPodItem</defName>
+    <label>Make Portable Recovery Pod Kit</label>
+    <description>Make a portable recovery pod kit.</description>
+    <jobString>Making a portable recovery pod kit.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1200</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MSRecoveryPodItem>1</MSRecoveryPodItem>
+    </products>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>7</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>MSRecoveryPod</researchPrerequisite>
+  </RecipeDef>
+</Defs>

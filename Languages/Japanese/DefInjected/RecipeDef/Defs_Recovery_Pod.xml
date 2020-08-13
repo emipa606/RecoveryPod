@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MakeMSRecoveryPodPackup.label>回収ポッドを折り畳む</MakeMSRecoveryPodPackup.label>
+  <MakeMSRecoveryPodPackup.description>バッグに回収ポッドを折り畳みます。</MakeMSRecoveryPodPackup.description>
+  <MakeMSRecoveryPodPackup.jobString>回収ポッドを収納中</MakeMSRecoveryPodPackup.jobString>
+</LanguageData>

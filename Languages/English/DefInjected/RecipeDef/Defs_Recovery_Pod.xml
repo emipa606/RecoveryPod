@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MakeMSRecoveryPodPackup.label>Repack Recovery Pod</MakeMSRecoveryPodPackup.label>
+  <MakeMSRecoveryPodPackup.description>Repack a recovery pod into a bag.</MakeMSRecoveryPodPackup.description>
+  <MakeMSRecoveryPodPackup.jobString>Repacking a recovery pod.</MakeMSRecoveryPodPackup.jobString>
+
+
+</LanguageData>

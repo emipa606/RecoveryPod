@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MSRecoveryPod.label>回収ポッド</MSRecoveryPod.label>
+  <MSRecoveryPod.description>人やアイテムや動物などを輸送可能な打ち上げ可能な大気圏内打上げ式の小型貨物ポッドです。緊急時や少量のアイテムを輸送する場合に使用します。回収ポッドは普段は折りたたまれて、すぐに取り出せるように運搬バッグに詰めて持ち運べるよう設計されています。</MSRecoveryPod.description>
+  <Blueprint_MSRecoveryPod.label>回収ポッド (設計)</Blueprint_MSRecoveryPod.label>
+  <Blueprint_Install_MSRecoveryPod.label>緊急ポッド (移動先)</Blueprint_Install_MSRecoveryPod.label>
+  <Frame_MSRecoveryPod.label>回収ポッド (施工)</Frame_MSRecoveryPod.label>
+  <Frame_MSRecoveryPod.description>人やアイテムや動物などを輸送可能な打ち上げ可能な大気圏内打上げ式の小型貨物ポッドです。緊急時や少量のアイテムを輸送する場合に使用します。回収ポッドは普段は折りたたまれて、すぐに取り出せるように運搬バッグに詰めて持ち運べるよう設計されています。</Frame_MSRecoveryPod.description>
+</LanguageData>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>MSRecoveryPod</defName>
+    <label>recovery pod</label>
+    <description>A smaller but portable version of the transport pod that can be intentionally used more readily in the field for emergency purposes.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>TransportPod</li>
+      <li>Fabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>2.20</researchViewY>
+  </ResearchProjectDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>MSRecoveryPod</defName>
+    <label>Recovery pod</label>
+    <description>A small launchable sub-orbital cargo pod capable of carrying people, items, or animals. Intentionally used for emergencies or in the case of sending small amounts of items. The pod is designed to collapse and be readily packed into a cargo bag.</description>
+    <graphicData>
+      <texPath>Things/Special/MSRecoveryPod</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>1.0</resourcesFractionWhenDeconstructed>
+    <passability>PassThroughOnly</passability>
+    <pathCost>65</pathCost>
+    <castEdgeShadows>false</castEdgeShadows>
+    <designationHotKey>Misc12</designationHotKey>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Misc</designationCategory>
+    <thingCategories Inherit="false">
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>250</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>7</Mass>
+    </statBases>
+    <costList>
+      <MSRecoveryPodItem>1</MSRecoveryPodItem>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>150</fuelCapacity>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>75</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+        <drawFuelGaugeInMap>true</drawFuelGaugeInMap>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Transporter">
+        <restEffectiveness>0.75</restEffectiveness>
+        <massCapacity>100.0</massCapacity>
+      </li>
+      <li Class="CompProperties_Launchable" />
+    </comps>
+    <building>
+      <hasFuelingPort>true</hasFuelingPort>
+    </building>
+    <inspectorTabs>
+      <li>ITab_ContentsTransporter</li>
+    </inspectorTabs>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>MSRecoveryPod</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <uiIconScale>0.7</uiIconScale>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeMSRecoveryPodPackup</defName>
+    <label>Repack Recovery Pod</label>
+    <description>Repack a recovery pod into a bag.</description>
+    <jobString>Repacking a recovery pod.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSRecoveryPod</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MSRecoveryPod</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MSRecoveryPodItem>1</MSRecoveryPodItem>
+    </products>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>MSRecoveryPod</researchPrerequisite>
+  </RecipeDef>
+</Defs>
