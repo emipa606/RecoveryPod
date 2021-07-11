@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <MakeMSRecoveryPodItem.label>Make Portable Recovery Pod Kit</MakeMSRecoveryPodItem.label>
   <MakeMSRecoveryPodItem.description>Make a portable recovery pod kit.</MakeMSRecoveryPodItem.description>
   <MakeMSRecoveryPodItem.jobString>Making a portable recovery pod kit.</MakeMSRecoveryPodItem.jobString>
-
-
 </LanguageData>
