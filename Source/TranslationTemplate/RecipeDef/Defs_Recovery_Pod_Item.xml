@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make Portable Recovery Pod Kit -->
+  <MakeMSRecoveryPodItem.label>Make Portable Recovery Pod Kit</MakeMSRecoveryPodItem.label>
+  <!-- EN: Make a portable recovery pod kit. -->
+  <MakeMSRecoveryPodItem.description>Make a portable recovery pod kit.</MakeMSRecoveryPodItem.description>
+  <!-- EN: Making a portable recovery pod kit. -->
+  <MakeMSRecoveryPodItem.jobString>Making a portable recovery pod kit.</MakeMSRecoveryPodItem.jobString>
+</LanguageData>

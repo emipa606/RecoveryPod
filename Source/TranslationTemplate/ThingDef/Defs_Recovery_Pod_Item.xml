@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Portable Recovery Pod Kit -->
+  <MSRecoveryPodItem.label>Portable Recovery Pod Kit</MSRecoveryPodItem.label>
+  <!-- EN: A portable recovery pod kit that can be deployed in the field with minimal construction. Additionally will require fueling. -->
+  <MSRecoveryPodItem.description>A portable recovery pod kit that can be deployed in the field with minimal construction. Additionally will require fueling.</MSRecoveryPodItem.description>
+</LanguageData>

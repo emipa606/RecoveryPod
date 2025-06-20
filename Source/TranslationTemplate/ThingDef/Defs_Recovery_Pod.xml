@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Recovery pod -->
+  <MSRecoveryPod.label>Recovery pod</MSRecoveryPod.label>
+  <!-- EN: A small launchable sub-orbital cargo pod capable of carrying people, items, or animals. Intentionally used for emergencies or in the case of sending small amounts of items. The pod is designed to collapse and be readily packed into a cargo bag. -->
+  <MSRecoveryPod.description>A small launchable sub-orbital cargo pod capable of carrying people, items, or animals. Intentionally used for emergencies or in the case of sending small amounts of items. The pod is designed to collapse and be readily packed into a cargo bag.</MSRecoveryPod.description>
+</LanguageData>

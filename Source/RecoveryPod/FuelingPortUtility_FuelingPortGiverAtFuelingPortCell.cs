@@ -4,12 +4,11 @@ using Verse;
 
 namespace RecoveryPod;
 
-[HarmonyPatch(typeof(FuelingPortUtility), "FuelingPortGiverAtFuelingPortCell")]
-public class FuelingPortGiverAtFuelingPortCell_Patch
+[HarmonyPatch(typeof(FuelingPortUtility), nameof(FuelingPortUtility.FuelingPortGiverAtFuelingPortCell))]
+public class FuelingPortUtility_FuelingPortGiverAtFuelingPortCell
 {
-    [HarmonyPrefix]
     [HarmonyPriority(800)]
-    public static bool PreFix(ref Building __result, IntVec3 c, Map map)
+    public static bool Prefix(ref Building __result, IntVec3 c, Map map)
     {
         var pod = c.GetFirstBuilding(map);
         if (pod == null || pod.def.defName != "MSRecoveryPod")

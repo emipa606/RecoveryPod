@@ -6,10 +6,9 @@ using Verse;
 namespace RecoveryPod;
 
 [HarmonyPatch(typeof(GenLeaving), "GetBuildingResourcesLeaveCalculator")]
-public class GetBuildingResourcesLeaveCalculator_PostPatch
+public class GenLeaving_GetBuildingResourcesLeaveCalculator
 {
-    [HarmonyPostfix]
-    public static void PostFix(ref Func<int, int> __result, Thing destroyedThing, ref DestroyMode mode)
+    public static void Postfix(ref Func<int, int> __result, Thing destroyedThing, ref DestroyMode mode)
     {
         if (destroyedThing.def.defName != "MSRecoveryPod" || mode != DestroyMode.Deconstruct ||
             !(destroyedThing.def.resourcesFractionWhenDeconstructed >= 1f))
@@ -23,15 +22,14 @@ public class GetBuildingResourcesLeaveCalculator_PostPatch
             return;
         }
 
-        if (mode == DestroyMode.Deconstruct && destroyedThing is Frame)
+        switch (mode)
         {
-            mode = DestroyMode.Cancel;
-            return;
-        }
-
-        if (mode == DestroyMode.Deconstruct)
-        {
-            __result = count => count;
+            case DestroyMode.Deconstruct when destroyedThing is Frame:
+                mode = DestroyMode.Cancel;
+                return;
+            case DestroyMode.Deconstruct:
+                __result = count => count;
+                break;
         }
     }
 }
