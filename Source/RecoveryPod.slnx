@@ -3,4 +3,14 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="RecoveryPod/RecoveryPod.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/Defs/">
+    <File Path="../Defs/Defs_Recovery_Pod_Item.xml" />
+    <File Path="../Defs/Defs_Recovery_Pod.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
 </Solution>

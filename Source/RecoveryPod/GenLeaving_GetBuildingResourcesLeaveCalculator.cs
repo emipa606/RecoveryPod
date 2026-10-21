@@ -6,7 +6,7 @@ using Verse;
 namespace RecoveryPod;
 
 [HarmonyPatch(typeof(GenLeaving), "GetBuildingResourcesLeaveCalculator")]
-public class GenLeaving_GetBuildingResourcesLeaveCalculator
+public static class GenLeaving_GetBuildingResourcesLeaveCalculator
 {
     public static void Postfix(ref Func<int, int> __result, Thing destroyedThing, ref DestroyMode mode)
     {
